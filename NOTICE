@@ -1,0 +1,59 @@
+SPO Academy
+Copyright 2024-2026 Fluid7 Ltd and Edify Systems Limited.
+
+Developed with funding from Project Catalyst, project 1200212.
+
+WHAT IS LICENSED, AND HOW
+=========================
+
+This project carries three different licences, because it contains three
+different kinds of work. The boundary is stated here so that anyone can check
+it rather than having to take it on trust.
+
+1. CODE  -  Apache License 2.0  (see LICENSE)
+
+   All source code produced for this project by Fluid7 Ltd and Edify Systems
+   Limited. That includes the SPO Academy web application, the Playbook
+   Builder, the documentation site, and the build and course-production
+   tooling.
+
+2. PACKAGING AND DELIVERY  -  CC BY-SA 4.0  (see LICENSE-CONTENT)
+
+   How the course is structured and delivered: module structure and
+   sequencing, the Student Learning Targets, session plans, written
+   documentation, and the published project record.
+
+   The Student Learning Targets sit here, not under section 3, because they
+   are published on chain as part of the course structure on Andamio. Anyone
+   can read them there without asking us, so they cannot be proprietary.
+
+3. CONTENT IP  -  proprietary, all rights reserved
+
+   The coaching, consultancy and mentoring frameworks that form the
+   substantive teaching content of the course are the intellectual property
+   of Edify Systems Limited, trading as Edify Colabs. This includes the
+   assignment templates and the assignment prompts. They are not open source
+   and are not licensed by this repository.
+
+   The public Playbook Builder ships with placeholder prompts. Where such
+   material appears in or is referenced by this repository, it remains
+   subject to Edify Systems Limited's separate terms.
+
+THIRD-PARTY MATERIAL
+====================
+
+The Andamio platform, on which the course is hosted and the on-chain
+credentials are issued, is not covered by any licence in this repository and
+remains subject to Andamio's own terms.
+
+Dependencies retain their own licences.
+
+TRADE MARKS
+===========
+
+No licence in this repository grants any right to use the SPO Academy,
+Fluid7 or Edify names or logos. The Apache License 2.0 expressly excludes trade mark
+rights, and CC BY-SA 4.0 does not grant them.
+
+You may fork and run this software. Please do not represent the result as
+SPO Academy.

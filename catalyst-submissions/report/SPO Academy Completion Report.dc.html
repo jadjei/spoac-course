@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="./doc-page.js"></script>
+<style>body{margin:0}a{color:#C4501C;text-decoration:none}a:hover{color:#0E2F3A;text-decoration:underline}</style>
+</helmet>
+<doc-page size="a4">
+
+<sc-if value="{{ coverNavy }}" hint-placeholder-val="{{ true }}">
+<section class="page" data-screen-label="01 Cover" style="display:flex;flex-direction:column;padding:60px 64px 52px;box-sizing:border-box;background:#0E2F3A;color:#fff;position:relative;overflow:hidden;font-family:'IBM Plex Sans',sans-serif">
+  <div style="position:absolute;right:-180px;top:-140px;width:520px;height:520px;border-radius:50%;background:#009EE2"></div>
+  <div style="position:absolute;right:-40px;top:0px;width:240px;height:240px;border-radius:50%;background:#FF8959"></div>
+  <div style="display:flex;align-items:center;gap:14px;position:relative">
+    <img src="assets/spo-mark.svg" alt="" style="width:52px;height:52px"></img>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:500;font-size:28px;letter-spacing:-0.01em"><span style="color:#fff">SPO</span><span style="color:#FF8959">Academy</span></span>
+  </div>
+  <div style="margin-top:auto;position:relative">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#FF8959">Catalyst project 1200212</div>
+    <h1 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:92px;line-height:0.95;letter-spacing:-0.035em;margin:18px 0 0;color:#fff">Project Completion Report</h1>
+    <p style="font-family:Ubuntu,sans-serif;font-size:24px;line-height:1.3;color:#CFE3EA;margin:28px 0 0;max-width:520px">SPO Academy: Business Education for Stake Pool Operators</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:56px;border-top:1px solid #2C5866;position:relative">
+    <div style="padding:20px 16px 0 0"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:52px;line-height:1;color:#FF8959">8</div><div style="font-size:14px;color:#CFE3EA;margin-top:8px">modules, 000 to 700</div></div>
+    <div style="padding:20px 16px 0;border-left:1px solid #2C5866"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:52px;line-height:1;color:#FF8959">9</div><div style="font-size:14px;color:#CFE3EA;margin-top:8px">confirmed cohort participants</div></div>
+    <div style="padding:20px 0 0 16px;border-left:1px solid #2C5866"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:52px;line-height:1;color:#FF8959">5</div><div style="font-size:14px;color:#CFE3EA;margin-top:8px">live sessions delivered</div></div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:44px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#9FBFCA;position:relative">
+    <span>Delivered by Fluid7 Ltd with Edify</span><span>27 October 2026</span>
+  </div>
+</section>
+</sc-if>
+<sc-if value="{{ coverOrange }}" hint-placeholder-val="{{ false }}">
+<section class="page" data-screen-label="01 Cover" style="display:flex;flex-direction:column;padding:60px 64px 52px;box-sizing:border-box;background:#FF8959;color:#0E2F3A;position:relative;overflow:hidden;font-family:'IBM Plex Sans',sans-serif">
+  <div style="position:absolute;left:-120px;bottom:-200px;width:560px;height:560px;border-radius:50%;background:#0E2F3A"></div>
+  <div style="position:absolute;left:300px;bottom:180px;width:120px;height:120px;border-radius:50%;background:#009EE2"></div>
+  <div style="display:flex;align-items:center;gap:14px;position:relative">
+    <img src="assets/spo-mark.svg" alt="" style="width:52px;height:52px;background:#0E2F3A;border-radius:50%;padding:6px;box-sizing:border-box"></img>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:500;font-size:28px;letter-spacing:-0.01em"><span style="color:#0E2F3A">SPO</span><span style="color:#fff">Academy</span></span>
+  </div>
+  <div style="margin-top:72px;position:relative">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#0E2F3A">Catalyst project 1200212</div>
+    <h1 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:92px;line-height:0.95;letter-spacing:-0.035em;margin:18px 0 0">Project Completion Report</h1>
+    <p style="font-family:Ubuntu,sans-serif;font-size:24px;line-height:1.3;margin:28px 0 0;max-width:520px">SPO Academy: Business Education for Stake Pool Operators</p>
+  </div>
+  <div style="margin-top:auto;position:relative;display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:#0E2F3A">
+    <span>Delivered by Fluid7 Ltd with Edify</span><span>27 October 2026</span>
+  </div>
+</section>
+</sc-if>
+
+<section class="page" data-screen-label="02 Overview" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C">The problem this project addressed</div>
+  <p style="font-family:Ubuntu,sans-serif;font-weight:500;font-size:27px;line-height:1.3;letter-spacing:-0.01em;margin:18px 0 0;text-wrap:pretty">Stake pool operators are, as a population, <span style="background:#FFE3D6;padding:0 4px">technically excellent and commercially invisible.</span> Most can build and run infrastructure. Far fewer can say what their pool is for, who it serves, what value it creates, or how it survives.</p>
+  <p style="font-size:17px;line-height:1.6;margin:20px 0 0;color:#2E4F5A;text-wrap:pretty">SPO Academy was funded to close that gap with a business course written for operators, delivered on-chain, with a credential at the end.</p>
+  <div style="margin-top:44px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C">Project details</div>
+  <div style="margin-top:12px;display:grid;grid-template-columns:190px minmax(0,1fr);border-top:2px solid #0E2F3A;font-size:15px;line-height:1.45">
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project name</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">SPO Academy: Business Education for Stake Pool Operators</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project number</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace">1200212</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project manager</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA">Jonathan Adjei, Fluid7 Ltd</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Delivery partner</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA">Harry Hellyer, Edify Systems Limited, trading as Edify Colabs</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project start date</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA">12 August 2024. Delivery resumed 28 August 2025 after a pause</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project completion date</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA">26 October 2026</div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Project URL</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace;font-size:14px"><a href="https://milestones.projectcatalyst.io/projects/1200212">milestones.projectcatalyst.io/projects/1200212</a></div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">All outputs</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace;font-size:14px"><a href="https://catalyst.pages.fluid7.co.uk/spoacademydocs">catalyst.pages.fluid7.co.uk/spoacademydocs</a></div>
+    <div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#5B7480">Completion video</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace;font-size:14px"><a href="https://youtu.be/0nnG3V2Fl38">youtu.be/0nnG3V2Fl38</a></div>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>02</span></div>
+</section>
+
+<section class="page" data-screen-label="03 Deliverables" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid #0E2F3A;padding-bottom:16px">
+    <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:1;letter-spacing:-0.03em;margin:0">Deliverables</h2>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:64px;line-height:0.8;color:#FF8959">01</span>
+  </div>
+  <div style="display:grid;grid-template-columns:150px minmax(0,1fr) 170px;font-size:14.5px;line-height:1.45">
+    <div style="padding:9px 12px 9px 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480;border-bottom:1px solid #E1E7EA">Output</div><div style="padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480;border-bottom:1px solid #E1E7EA">What it is</div><div style="padding:9px 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480;border-bottom:1px solid #E1E7EA">Evidence</div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">The course</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">Eight modules, 000 to 700, orientation through to a finished business plan</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace;font-size:12.5px;word-break:break-all"><a href="https://app.andamio.io/course/spo-academy">app.andamio.io/course/spo-academy</a></div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">On-chain credentials</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">Eight credentials, one per module, all minted on Cardano in a single transaction and claimable by the operator</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-size:13.5px;color:#2E4F5A">Transaction hashes in Milestone 4 Output E</div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">The Playbook Builder</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">Assembles a participant's assignment answers into a usable plan, copied out in one click</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-size:13.5px;color:#2E4F5A">Demonstrated in the completion video</div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">Public website and application flow</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">Course marketing, the persona quiz, and on-chain pool verification at application</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-family:'IBM Plex Mono',monospace;font-size:12.5px"><a href="https://spo.academy">spo.academy</a></div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">Live delivery</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">An onboarding session and four teaching sessions, each recorded and written up the same week</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-size:13.5px;color:#2E4F5A">Cohort session write-ups</div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">Pricing model</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">Adopted 5 October 2026, with the market research behind each price</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-size:13.5px;color:#2E4F5A">Pricing strategy</div>
+    <div style="padding:12px 12px 12px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-weight:700;font-size:16px">Feedback instrument and findings</div><div style="padding:12px;border-bottom:1px solid #E1E7EA">A seven-question form with a three-way quoting-consent item, plus the compiled analysis</div><div style="padding:12px 0;border-bottom:1px solid #E1E7EA;font-size:13.5px;color:#2E4F5A">Feedback report</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:26px;font-size:14.5px;line-height:1.55;color:#2E4F5A">
+    <p style="margin:0"><strong style="color:#0E2F3A">Testing performed.</strong> The course was run live with a real cohort of nine operators across five sessions. Pool identifiers and Calidus IDs are verified against the Cardano chain at application. The credential path was exercised end to end, from course creation through to a participant claim, with the transactions recorded on chain.</p>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0"><strong style="color:#0E2F3A">User feedback.</strong> Three written responses to the feedback form, all three consenting to attribution, plus a verbal round in the final session and continuous feedback in the cohort Discord. Compiled in the feedback report, with every resulting action owned and dated in the action plan.</p>
+      <p style="margin:0"><strong style="color:#0E2F3A">Open source status and licence.</strong> Yes. Code under <strong style="color:#0E2F3A">Apache License 2.0</strong>, course packaging under <strong style="color:#0E2F3A">CC BY-SA 4.0</strong>. Edify Systems Limited's frameworks and assignment templates stay proprietary, so the public Playbook Builder ships placeholder prompts. See each repository's NOTICE.</p>
+    </div>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>03</span></div>
+</section>
+
+<section class="page" data-screen-label="04 On-chain evidence" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#0E2F3A;color:#fff;font-family:'IBM Plex Sans',sans-serif">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#FF8959">01 · Deliverables</div>
+  <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:56px;line-height:1;letter-spacing:-0.03em;margin:16px 0 0">On-chain evidence</h2>
+  <div style="display:flex;flex-direction:column;margin-top:40px;border-top:1px solid #2C5866">
+    <div style="padding:22px 0;border-bottom:1px solid #2C5866"><div style="font-size:15px;color:#CFE3EA">Andamio course id</div><div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#FF8959;margin-top:8px;word-break:break-all">e60f29abf7a3f348bf4f51a078dae6f53cd3bc065d74632d3f67d785</div></div>
+    <div style="padding:22px 0;border-bottom:1px solid #2C5866"><div style="font-size:15px;color:#CFE3EA">Andamio credential policy id, shared across their courses</div><div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#FF8959;margin-top:8px;word-break:break-all">26a8cd75574c11bf33e85e69134529f765cf1e1743d33e89b61da9c5</div></div>
+    <div style="padding:22px 0;border-bottom:1px solid #2C5866"><div style="font-size:15px;color:#CFE3EA">Course access token minted, 11 February 2026</div><div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#FF8959;margin-top:8px;word-break:break-all">51ab905a2c02ca06361b6bde8044b8cb018a51d4ccf98b68ca7ed85b86ccd0e1</div></div>
+    <div style="padding:22px 0;border-bottom:1px solid #2C5866"><div style="font-size:15px;color:#CFE3EA">All eight module credentials minted, 31 July 2026</div><div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#FF8959;margin-top:8px;word-break:break-all">aa72a10e10dbc0c416f1bb738a4374844b697ff6b83a7f91dedf9f1917269655</div></div>
+    <div style="padding:22px 0;border-bottom:1px solid #2C5866"><div style="font-size:15px;color:#CFE3EA">An assignment submitted against the module 000 credential, 29 September 2026</div><div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#FF8959;margin-top:8px;word-break:break-all">9c95a94aaa10507f717c5fbd9edec4ac6e126837bb4000ef958d33ad9716feee</div></div>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#9FBFCA"><span>SPO Academy · Project Completion Report</span><span>04</span></div>
+</section>
+
+<section class="page" data-screen-label="05 Usage" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid #0E2F3A;padding-bottom:16px">
+    <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:1;letter-spacing:-0.03em;margin:0">Usage</h2>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:64px;line-height:0.8;color:#FF8959">02</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:24px">
+    <div style="grid-column:span 2;background:#0E2F3A;color:#fff;border-radius:6px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;min-height:150px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:96px;line-height:0.85;color:#FF8959">9</div><div style="font-size:15px;color:#CFE3EA">Confirmed cohort participants</div></div>
+    <div style="background:#FFF1EA;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:0.9">14</div><div style="font-size:13px;line-height:1.4;color:#2E4F5A">Operators who identified themselves to the project, of whom 10 came through the persona quiz</div></div>
+    <div style="background:#FFF1EA;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:0.9">5</div><div style="font-size:13px;line-height:1.4;color:#2E4F5A">Live sessions delivered, including onboarding</div></div>
+    <div style="background:#EAF6FC;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:120px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:0.9">13</div><div style="font-size:13px;line-height:1.4;color:#2E4F5A">Assignments completed and accepted, 2 still in assessment</div></div>
+    <div style="background:#EAF6FC;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:28px;line-height:1">31</div><div style="font-size:13px;line-height:1.4;color:#2E4F5A">Assignments submitted, by 6 of the 9 participants</div></div>
+    <div style="background:#EAF6FC;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:0.9">3<span style="font-size:26px;color:#5B7480"> of 9</span></div><div style="font-size:13px;line-height:1.4;color:#2E4F5A">Written feedback responses</div></div>
+    <div style="background:#009EE2;color:#fff;border-radius:6px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:0.9">56</div><div style="font-size:13px;line-height:1.4;color:#0E2F3A;font-weight:500">Campaign items published, each with a posted reference</div></div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:16px;margin-top:30px;font-size:15px;line-height:1.6;color:#2E4F5A">
+    <p style="margin:0"><strong style="color:#0E2F3A">Who uses it.</strong> Cardano stake pool operators, mainnet and testnet. The cohort included established operators, one running five years, and prospective operators without a mainnet pool yet, which the course was deliberately built to serve.</p>
+    <p style="margin:0"><strong style="color:#0E2F3A">Key actions completed by users.</strong> Minting an Andamio access token, working the module assignments against their own pool, building a plan in the Playbook Builder, claiming an on-chain credential, and submitting written feedback.</p>
+    <p style="margin:0"><strong style="color:#0E2F3A">Evidence of engagement.</strong> Each session has a published write-up and recording. Participants submitted assignments between sessions, raised platform friction in the cohort channel as it happened, and two have described continuing to build their plan after the cohort closed. Completion ran ahead of claiming: operators did the work and left the credential unclaimed, which is the same signal as their strongest product ask. A credential is worth claiming when there is somewhere to show it.</p>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>05</span></div>
+</section>
+
+<section class="page" data-screen-label="06 Impact" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid #0E2F3A;padding-bottom:16px">
+    <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:1;letter-spacing:-0.03em;margin:0">Impact</h2>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:64px;line-height:0.8;color:#FF8959">03</span>
+  </div>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C;margin-top:28px">What changed for the operators</div>
+  <p style="font-family:Ubuntu,sans-serif;font-size:22px;line-height:1.4;margin:12px 0 0;text-wrap:pretty">Every form respondent reported an unprompted shift in how they think about their pool, and all three said the plan they built is one they will use. One had already started an evolving playbook for their own pool. One stated they will execute on the plan.</p>
+  <figure style="margin:40px -64px 0;background:#FF8959;padding:44px 64px 40px;position:relative">
+    <div style="position:absolute;top:-10px;left:52px;font-family:Ubuntu,sans-serif;font-weight:700;font-size:140px;line-height:1;color:#0E2F3A">“</div>
+    <blockquote style="margin:44px 0 0;font-family:Ubuntu,sans-serif;font-weight:500;font-size:25px;line-height:1.38;letter-spacing:-0.01em;color:#0E2F3A;text-wrap:pretty">Previously, it was easy to focus on increasing delegation, producing blocks and maintaining reliable infrastructure. Those things remain important, but I'm increasingly viewing delegation growth as a possible outcome of creating meaningful value rather than the primary reason for operating the pool.</blockquote>
+    <figcaption style="margin-top:22px;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;letter-spacing:0.14em;color:#0E2F3A">— RCADA</figcaption>
+  </figure>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>06</span></div>
+</section>
+
+<section class="page" data-screen-label="07 Impact continued" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C">03 · Impact</div>
+  <p style="font-size:16px;line-height:1.55;margin:14px 0 0;color:#2E4F5A">Asked in the final session what the course changed for them, the answers were:</p>
+  <ol style="list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;border-top:1px solid #E1E7EA">
+    <li style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-size:18px;line-height:1.35"><span style="color:#009EE2;font-weight:700">→</span><span>seeing the gaps in how a pool measures the value it creates;</span></li>
+    <li style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-size:18px;line-height:1.35"><span style="color:#009EE2;font-weight:700">→</span><span>the difference between a pool's philosophy and the systems that run it;</span></li>
+    <li style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-size:18px;line-height:1.35"><span style="color:#009EE2;font-weight:700">→</span><span>thinking of a pool as an organism rather than a machine;</span></li>
+    <li style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-size:18px;line-height:1.35"><span style="color:#009EE2;font-weight:700">→</span><span>the pool's financial gaps and the types of delegator it serves;</span></li>
+    <li style="display:grid;grid-template-columns:40px minmax(0,1fr);padding:11px 0;border-bottom:1px solid #E1E7EA;font-family:Ubuntu,sans-serif;font-size:18px;line-height:1.35"><span style="color:#009EE2;font-weight:700">→</span><span>and, for a five-year operator, putting words to the personal development the work has brought.</span></li>
+  </ol>
+  <div style="margin-top:30px;background:#0E2F3A;color:#fff;border-radius:6px;padding:24px 26px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#FF8959">Before and after</div>
+    <p style="margin:10px 0 0;font-family:Ubuntu,sans-serif;font-size:19px;line-height:1.45;text-wrap:pretty">Before this project there was no business-focused course for Cardano stake pool operators, and no on-chain credential for one. There is now, with nine operators through it and the material permanently available and self-paced.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:28px;font-size:14.5px;line-height:1.6;color:#2E4F5A">
+    <div><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:17px;color:#0E2F3A;padding-bottom:8px;border-bottom:3px solid #009EE2;margin-bottom:10px">Benefit to the Cardano ecosystem</div><p style="margin:0">Small pools that can articulate their purpose and sustain themselves are what keeps the network decentralised. The course also put Andamio's credentialing through a full live cohort and fed detailed findings back to their team, who asked for them and acted on them. Every course built on that platform benefits from that round trip.</p></div>
+    <div><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:17px;color:#0E2F3A;padding-bottom:8px;border-bottom:3px solid #FF8959;margin-bottom:10px">Partnerships and recognition</div><p style="margin:0">Delivered with Edify. The course was presented in person to the xSPO Alliance weekly call on 4 October 2026, and announced across the Andamio, SPO Call, xSPO Alliance, RealFi, IOG / Intersect and Midnight communities.</p></div>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>07</span></div>
+</section>
+
+<section class="page" data-screen-label="08 Sustainability" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid #0E2F3A;padding-bottom:16px">
+    <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:1;letter-spacing:-0.03em;margin:0">Sustainability</h2>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:64px;line-height:0.8;color:#FF8959">04</span>
+  </div>
+  <p style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:34px;line-height:1.1;letter-spacing:-0.02em;margin:28px 0 0">The project is ongoing, not a one-off.</p>
+  <p style="font-size:15px;line-height:1.6;margin:22px 0 0;color:#2E4F5A"><strong style="color:#0E2F3A">Maintenance model.</strong> The course stays open and self-paced on Andamio. Fluid7 maintains the public site, the application flow and the Playbook Builder. The seventeen improvements in the action plan each carry an owner and a date.</p>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C;margin-top:30px">Revenue model · adopted 5 October 2026</div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px">
+    <div style="background:#0E2F3A;color:#fff;border-radius:6px;padding:20px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:52px;line-height:1;color:#FF8959">$295</div><div style="font-size:15px;margin-top:10px;color:#CFE3EA">for a guided cohort</div></div>
+    <div style="background:#FFF1EA;border-radius:6px;padding:20px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:52px;line-height:1">$210</div><div style="font-size:15px;margin-top:10px;color:#2E4F5A">self-paced</div></div>
+    <div style="background:#EAF6FC;border-radius:6px;padding:20px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:26px;line-height:1.1">Operator-set price</div><div style="font-size:14px;line-height:1.4;margin-top:10px;color:#2E4F5A">for pools estimated to earn under 5,000 ADA a year</div></div>
+  </div>
+  <p style="font-size:15px;line-height:1.6;margin:16px 0 0;color:#2E4F5A">The launch cohort was not charged, so these prices are published but untested. <strong style="color:#0E2F3A">The second cohort has to charge for that to change.</strong></p>
+  <div style="margin-top:30px;border-top:1px solid #E1E7EA;padding-top:20px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C">Future roadmap</div>
+    <p style="font-size:15px;line-height:1.6;margin:10px 0 0;color:#2E4F5A">A second cohort once the material is reworked, a dedicated session with Andamio to get the platform items onto their roadmap, and the credentials package the cohort asked for. A further live session for this cohort may be arranged once the updated material is ready.</p>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>08</span></div>
+</section>
+
+<section class="page" data-screen-label="09 Milestones" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid #0E2F3A;padding-bottom:16px">
+    <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:44px;line-height:1;letter-spacing:-0.03em;margin:0">Milestones and outcomes</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:22px">
+    <div style="background:#F2F5F6;border-radius:6px;padding:14px;display:flex;flex-direction:column;gap:8px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#009EE2">1</div><div style="font-size:13px;line-height:1.35;font-weight:500">Course Foundation and User Experience Design</div><div style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.4;color:#2E4F5A">Approved August 2024</div></div>
+    <div style="background:#F2F5F6;border-radius:6px;padding:14px;display:flex;flex-direction:column;gap:8px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#009EE2">2</div><div style="font-size:13px;line-height:1.35;font-weight:500">Technical Infrastructure and Content Development</div><div style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.4;color:#2E4F5A">Signed off September 2025</div></div>
+    <div style="background:#F2F5F6;border-radius:6px;padding:14px;display:flex;flex-direction:column;gap:8px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#009EE2">3</div><div style="font-size:13px;line-height:1.35;font-weight:500">Platform Enhancement and Course Content Finalization</div><div style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.4;color:#2E4F5A">Submitted 29 September 2026</div></div>
+    <div style="background:#0E2F3A;color:#fff;border-radius:6px;padding:14px;display:flex;flex-direction:column;gap:8px"><div style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">4</div><div style="font-size:13px;line-height:1.35;font-weight:500">Platform Launch, Community Engagement, and Project Evaluation</div><div style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.4;color:#FF8959">This milestone</div></div>
+  </div>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C;margin-top:32px">MVP evaluated against the pre-defined criteria</div>
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr);margin-top:12px;border-top:2px solid #0E2F3A;font-size:14px;line-height:1.45">
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Treasury system operational</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#0E2F3A;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Live on chain</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Minimum 15 SPOs confirmed for the initial run</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#FF8959;color:#0E2F3A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px;font-weight:500">Not met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Nine confirmed</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Pricing model defined and published</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#0E2F3A;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Adopted 5 October, with the research behind each price</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Promotional materials across X, LinkedIn and SPO Discord communities</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#0E2F3A;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Fifty-six items, each with a posted reference</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Certification NFTs minted on chain, pool specific</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#0E2F3A;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Minted and claimed, with transaction hashes</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Participant feedback collected and analysed, improvements identified</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#0E2F3A;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px">Met</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">Three written responses, a verbal round, seventeen owned actions</div>
+    <div style="padding:11px 12px 11px 0;border-bottom:1px solid #E1E7EA;font-weight:500">Close-out report and video</div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA"><span style="display:inline-block;background:#009EE2;color:#0E2F3A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:3px;font-weight:500">Published</span></div><div style="padding:11px 0;border-bottom:1px solid #E1E7EA;color:#2E4F5A">With the video to follow</div>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>09</span></div>
+</section>
+
+<section class="page" data-screen-label="10 Participant count" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#FF8959;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase">On the participant count</div>
+  <div style="display:flex;align-items:baseline;gap:14px;margin-top:20px;font-family:Ubuntu,sans-serif;font-weight:700;letter-spacing:-0.05em;line-height:0.85">
+    <span style="font-size:220px">9</span><span style="font-size:72px;color:#fff">/ 15</span>
+  </div>
+  <p style="font-family:Ubuntu,sans-serif;font-weight:500;font-size:28px;line-height:1.25;letter-spacing:-0.01em;margin:28px 0 0;text-wrap:pretty">Nine against a target of fifteen is the one criterion missed. Marketing was not the constraint.</p>
+  <p style="font-size:16.5px;line-height:1.6;margin:22px 0 0;text-wrap:pretty">Fourteen operators gave their contact details, ten through the persona quiz alone, across fifty-six published campaign items. The constraint was conversion from interest to commitment. A stake pool operator is usually a sole trader running infrastructure in the evenings, and a four-session course asking for written assignments about their own business is a real ask.</p>
+  <p style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:22px;line-height:1.35;margin:26px 0 0;padding-top:22px;border-top:2px solid #0E2F3A">The nine who committed produced more usable evidence than fifteen passive enrolments would have.</p>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase"><span>SPO Academy · Project Completion Report</span><span>10</span></div>
+</section>
+
+<section class="page" data-screen-label="11 Lessons learned" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="border-bottom:2px solid #0E2F3A;padding-bottom:16px"><h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:48px;line-height:1;letter-spacing:-0.03em;margin:0">Lessons learned</h2></div>
+  <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">1</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">A cohort target is a conversion assumption, not a marketing one.</strong>We reached operators comfortably and converted fewer than planned. The next target should be set on how many operators will commit to assignments, not on how many will give an email address.</div></li>
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">2</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">Choosing a platform is choosing a partner.</strong>Andamio gave us on-chain credentials we could not have built in the budget, and a team that answered. Participants still hit friction: submission costs the platform did not surface, a module stuck in assessment, no resume between modules. Andamio asked for the detail and shipped fixes while the cohort was still running. The rest are on their roadmap. Friction is inevitable. A team that responds is not.</div></li>
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">3</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">A self-paced course with a live series runs on two clocks.</strong>The course is deliberately asynchronous: the material stands alone and participants set their own pace, which is right for operators fitting study around running infrastructure. The four live sessions ran to a fixed calendar, which implied a pace the course does not impose. One participant worked four modules in the final week to meet a deadline that was never really there. Signpost which modules a session draws on, and let the operator decide whether to be ahead of it.</div></li>
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">4</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">Written feedback under-reports.</strong>Three of nine responded in writing. The verbal round in the final session surfaced four themes the form missed entirely, including the strongest product ask of the project, a credentials package operators can show to funders.</div></li>
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">5</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">Material written to teach a framework grows past what the work needs.</strong>Two respondents independently said the modules carry more words than the assignments require, and one said it read as machine-written. Length is not rigour.</div></li>
+    <li style="display:grid;grid-template-columns:52px minmax(0,1fr);padding:14px 0"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:30px;line-height:1;color:#FF8959">6</span><div style="font-size:14.5px;line-height:1.55;color:#2E4F5A"><strong style="font-family:Ubuntu,sans-serif;font-size:17px;color:#0E2F3A;display:block;margin-bottom:3px">A free launch cohort gives no price signal.</strong>Nothing was charged, so the published prices remain untested.</div></li>
+  </ol>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>11</span></div>
+</section>
+
+<section class="page" data-screen-label="12 Recommendations" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#fff;color:#0E2F3A;font-family:'IBM Plex Sans',sans-serif">
+  <div style="border-bottom:2px solid #0E2F3A;padding-bottom:16px"><h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:40px;line-height:1.05;letter-spacing:-0.03em;margin:0">Recommendations for future development</h2></div>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C;margin-top:22px">Before a second cohort:</div>
+  <ol style="list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;font-size:14.5px;line-height:1.5;color:#2E4F5A">
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">1</span><span><strong style="color:#0E2F3A">Build one complete worked SPO business model, end to end, and make it the spine of the course rather than an appendix.</strong> This was the clearest single ask.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">2</span><span><strong style="color:#0E2F3A">Cut the overlapping frameworks.</strong> Teach one model per idea and cross-reference the rest.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">3</span><span><strong style="color:#0E2F3A">Signpost rather than schedule.</strong> Say which modules each live session draws on, so a participant can choose where to be without the course becoming a timetable.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">4</span><span><strong style="color:#0E2F3A">Restructure the live hour as application, not re-presentation,</strong> and give it a written participation route for operators who would rather not speak.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">5</span><span><strong style="color:#0E2F3A">Clear the production debt:</strong> audio quality, narration pace, contrast in module 503, image sizing in module 100, and hyperlinked cross-references.</span></li>
+  </ol>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#C4501C;margin-top:20px">Beyond that:</div>
+  <ol style="list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;font-size:14.5px;line-height:1.5;color:#2E4F5A">
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">6</span><span><strong style="color:#0E2F3A">Build the credentials package.</strong> The cohort asked for a logbook they can put in front of partners and funders. A per-module credential nobody outside the platform can read is worth less than the same credential in a document an operator can send.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0;border-bottom:1px solid #E1E7EA"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">7</span><span><strong style="color:#0E2F3A">Charge the second cohort,</strong> to test the pricing adopted in October.</span></li>
+    <li style="display:grid;grid-template-columns:36px minmax(0,1fr);padding:9px 0"><span style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:18px;color:#009EE2">8</span><span><strong style="color:#0E2F3A">Work the platform feedback into Andamio's roadmap</strong> in a dedicated session rather than as individual tickets.</span></li>
+  </ol>
+  <div style="margin-top:22px;background:#F2F5F6;border-radius:6px;padding:18px 22px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#0E2F3A">Supporting documents</div>
+    <ul style="margin:10px 0 0;padding:0 0 0 18px;font-size:14px;line-height:1.6;color:#2E4F5A;column-count:2;column-gap:28px">
+      <li>Cohort feedback report</li>
+      <li>Improvements and action plan</li>
+      <li>Pricing strategy and pricing market research</li>
+      <li>Session write-ups and recordings: onboarding, session 1, session 2, session 3, session 4</li>
+      <li>Milestone 4 EoMC</li>
+    </ul>
+  </div>
+  <div style="margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5B7480"><span>SPO Academy · Project Completion Report</span><span>12</span></div>
+</section>
+
+<section class="page" data-screen-label="13 Final thoughts" style="display:flex;flex-direction:column;padding:60px 64px 40px;box-sizing:border-box;background:#0E2F3A;color:#fff;font-family:'IBM Plex Sans',sans-serif;position:relative;overflow:hidden">
+  <div style="position:absolute;left:-160px;bottom:-220px;width:520px;height:520px;border-radius:50%;background:#009EE2"></div>
+  <div style="position:absolute;left:220px;bottom:120px;width:110px;height:110px;border-radius:50%;background:#FF8959"></div>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#FF8959;position:relative">Final thoughts</div>
+  <h2 style="font-family:Ubuntu,sans-serif;font-weight:700;font-size:88px;line-height:0.95;letter-spacing:-0.04em;margin:20px 0 0;color:#FF8959;position:relative">The course works.</h2>
+  <p style="font-family:Ubuntu,sans-serif;font-size:21px;line-height:1.45;margin:30px 0 0;color:#fff;position:relative;text-wrap:pretty">Operators who finished it think differently about their pools and have a plan they say they will use, which is the outcome the proposal was funded for. What this cohort proved is that the hard part is not teaching operators business, it is getting them to commit the hours.</p>
+  <p style="font-family:Ubuntu,sans-serif;font-size:21px;line-height:1.45;margin:20px 0 0;color:#CFE3EA;position:relative;text-wrap:pretty">That is a product problem, and it has answers: a worked example instead of theory, a pace someone can follow, and a credential worth showing to someone else.</p>
+  <div style="margin-top:auto;display:flex;justify-content:flex-end;align-items:center;gap:12px;position:relative">
+    <img src="assets/spo-mark.svg" alt="" style="width:42px;height:42px"></img>
+    <span style="font-family:Ubuntu,sans-serif;font-weight:500;font-size:22px"><span style="color:#fff">SPO</span><span style="color:#FF8959">Academy</span></span>
+  </div>
+  <div style="padding-top:20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#9FBFCA;position:relative"><span>spo.academy</span><span>13</span></div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cover&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;navy&quot;,&quot;orange&quot;],&quot;default&quot;:&quot;navy&quot;,&quot;tsType&quot;:&quot;'navy'|'orange'&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const c = this.props.cover ?? "navy";
+    return { coverNavy: c === "navy", coverOrange: c === "orange" };
+  }
+}
+</script>
+</body>
+</html>

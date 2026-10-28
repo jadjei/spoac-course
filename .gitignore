@@ -1,0 +1,37 @@
+# Raw Drive downloads (614M of .pptx/.xlsx — re-fetch with rclone)
+spoac-dl/
+# Derived / regenerable (rebuild via the scripts)
+extracted/
+compiled/
+import-staging/
+import-batch/
+import-flat/
+# Junk
+.DS_Store
+**/.DS_Store
+
+# Session logs
+*.log
+
+# Python bytecode
+__pycache__/
+
+# Generated review page
+review/
+
+# Catalyst working papers stay out of git by default; only the report build chain is let through.
+catalyst-submissions/*
+!catalyst-submissions/build-report.js
+!catalyst-submissions/check-overflow.js
+# PCR source travels with its build scripts; built output stays ignored
+!catalyst-submissions/report/
+catalyst-submissions/report/*
+!catalyst-submissions/report/SPO Academy Completion Report.dc.html
+!catalyst-submissions/report/assets/
+# FLUID worked example: pool-specific working data
+worked-example/
+# Key material and env files, never committed anywhere
+*.skey
+*.vkey
+.env
+.env.*

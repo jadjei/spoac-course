@@ -1,0 +1,18 @@
+# Elements deferred out of the current build.
+#
+# The planner is Harry's and stays untouched — deferral is recorded here instead, so his
+# titles, overviews and SLTs survive and the intent stays visible. A deferred element:
+#
+#   * is still carried in plan/course-plan.yaml, flagged `deferred: true`
+#   * gets no file in course/, so it is never scaffolded, imported or shipped
+#   * is listed separately in course/INDEX.md and plan/content-gaps.md rather than
+#     counted as a gap
+#
+# Undeferring is just deleting the entry and re-running plan-from-planner.py + scaffold.py.
+#
+# Codes must match plan/course-plan.yaml exactly (e.g. "303.1", "301.4b").
+
+deferred: []
+  # - code: "303.5"
+  #   reason: no deck, and likely covered by 303.3 + 303.4
+  #   decided: 2026-07-28
